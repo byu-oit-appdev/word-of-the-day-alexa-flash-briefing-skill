@@ -1,0 +1,8 @@
+lambdas:
+  word_fetcher:
+    code: word_fetcher
+    handler: code.handler
+    runtime: python
+    description: Fetches the word of the day from the API and adds it to S3 bucket
+    #role:
+    #memory:

@@ -1,0 +1,3 @@
+[submodule "pipeline-scripts"]
+	path = pipeline-scripts
+	url = https://github.com/byu-oit-appdev/pipeline-scripts.git
