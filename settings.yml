@@ -5,9 +5,12 @@ code-bucket: gordon-word-of-the-day-c8482ea6
 apps:
   - gordon.contrib.lambdas
   - lambda
+contexts:
+  default:
+    wordnik_api_key: ref://WordnikApiKey
 events:
   every_morning:
-    schedule_expression: cron(1 0 * * ? *)
+    schedule_expression: cron(17 5 * * ? *) # Wordnik is in the Pacific timezone, cron is in UTC, this makes 12:05am for Wordnik
     state: ENABLED
     description: Call lambda every morning.
     targets:

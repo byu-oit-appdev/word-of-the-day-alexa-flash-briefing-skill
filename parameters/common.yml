@@ -1,0 +1,2 @@
+---
+WordnikApiKey: env://WORDNIK_API_KEY 

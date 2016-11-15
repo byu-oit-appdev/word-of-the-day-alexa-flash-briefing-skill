@@ -1,0 +1,50 @@
+(Pdb) wotd
+<wordnik.models.WordOfTheDay.WordOfTheDay instance at 0x7f513b40b0e0>
+(Pdb) dir(wotd)
+['__doc__', '__init__', '__module__', 'category', 'contentProvider', 'createdAt', 'createdBy', 'definitions', 'examples', 'htmlExtra', 'id', 'note', 'parentId', 'publishDate', 'swaggerTypes', 'word']
+(Pdb) wotd.category
+(Pdb) wotd.contentProvider
+<wordnik.models.WordOfTheDay.WordOfTheDay instance at 0x7f513ad6cb90>
+(Pdb) wotd.createdAt
+(Pdb) wotd.createdBy
+(Pdb) wotd.word
+'autopoiesis'
+(Pdb) wotd.definitions
+[<wordnik.models.SimpleDefinition.SimpleDefinition instance at 0x7f513ad6d1b8>]
+(Pdb) wotd.note
+u'The word \'autopoiesis\' comes from Ancient Greek \u03b1\u1f50\u03c4\u03cc\u03c0\u03bf\u03b9\u03bf\u03c2\xa0(autopoios,\xa0"self-produced"), coined in 1972 by Chilean biologists Humberto Maturana and Francisco Varela.'
+(Pdb) wotd.definitions[0]
+<wordnik.models.SimpleDefinition.SimpleDefinition instance at 0x7f513ad6d1b8>
+(Pdb) dir(wotd.definitions[0])
+['__doc__', '__init__', '__module__', 'note', 'partOfSpeech', 'source', 'swaggerTypes', 'text']
+(Pdb) wotd.definitions[0].text
+'Self creation; self organization.'
+(Pdb) wotd.definitions[0].note
+(Pdb) wotd.definitions[0].partOfSpeech
+'noun'
+(Pdb) wotd.definitions[0].source
+'wiktionary'
+(Pdb) wotd.definitions[0].swaggerTypes
+{'note': 'str', 'text': 'str', 'partOfSpeech': 'str', 'source': 'str'}
+(Pdb) wotd.id
+521038L
+(Pdb) wotd.publishDate
+datetime.datetime(2016, 11, 14, 3, 0)
+(Pdb) wotd.swaggerTypes
+{'publishDate': 'datetime', 'examples': 'list[SimpleExample]', 'createdBy': 'str', 'contentProvider': 'ContentProvider', 'id': 'long', 'createdAt': 'datetime', 'category': 'str', 'word': 'str', 'note': 'str', 'parentId': 'str', 'definitions': 'list[SimpleDefinition]', 'htmlExtra': 'str'}
+(Pdb) wotd.examples
+[<wordnik.models.SimpleExample.SimpleExample instance at 0x7f513b410998>, <wordnik.models.SimpleExample.SimpleExample instance at 0x7f513b410560>, <wordnik.models.SimpleExample.SimpleExample instance at 0x7f513b410ea8>, <wordnik.models.SimpleExample.SimpleExample instance at 0x7f513ad6cb48>, <wordnik.models.SimpleExample.SimpleExample instance at 0x7f513ad6cc20>, <wordnik.models.SimpleExample.SimpleExample instance at 0x7f513ad6cc68>]
+(Pdb) wotd.examples[0]
+<wordnik.models.SimpleExample.SimpleExample instance at 0x7f513b410998>
+(Pdb) dir(wotd.examples[0])
+['__doc__', '__init__', '__module__', 'id', 'swaggerTypes', 'text', 'title', 'url']
+(Pdb) wotd.examples[0].text
+'This process of self-repair is called "autopoiesis" which is Greek for "self-making."'
+(Pdb) wotd.examples[0].title
+'Pavel Somov, Ph.D.:  Psychological Self-Maintenance'
+(Pdb) wotd.examples[0].url
+'http://api.wordnik.com/v4/mid/ae88e7f22b8b35b97c783cfd6302786089d7ba66749ceb3d17d5b4b6d741845340bbd1ea5ebcfedcf526ae8cca2d822f'
+(Pdb) wotd.examples[1].text
+"There are endless examples of such irreducible structures in living systems, but they all work under a unifying principle called 'autopoiesis'."
+(Pdb) wotd.examples[1].title
+'Latest Articles'

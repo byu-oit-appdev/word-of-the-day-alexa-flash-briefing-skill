@@ -1,3 +1,5 @@
 gordon
 plac
 sh
+wordnik
+awscli

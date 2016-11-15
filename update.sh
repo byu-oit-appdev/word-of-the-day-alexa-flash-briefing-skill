@@ -1,6 +1,7 @@
 #!/bin/bash -xe
 
 PROFILE=$1
+[[ -z $PROFILE ]] && echo "Usage: $0 aws-profile-name" && exit 1
 
 # update lambda
 gordon build
