@@ -21,7 +21,7 @@ def wotd2json(wotd):
     result['redirectionUrl'] = 'https://www.wordnik.com/word-of-the-day'
     text = wotd.word + ':'
     for definition in wotd.definitions:
-        text += ' ' + definition.partOfSpeech + ', ' + definition.text
+        text += ' ' + definition.partOfSpeech + '. ' + definition.text
         if definition.note:
             text += ' ' + definition.note
         text += ' Source, ' + definition.source + '.'
