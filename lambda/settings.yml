@@ -4,5 +4,14 @@ lambdas:
     handler: code.handler
     runtime: python
     description: Fetches the word of the day from the API and adds it to S3 bucket
-    #role:
+    policies:
+      bucket_policy:
+        Version: "2012-10-17"
+        Statement:
+          -
+            Action:
+              - "s3:PutObject"
+              - "s3:PutObjectAcl"
+            Resource: "arn:aws:s3:::alexa-word-of-the-day-763881559496/flashbriefing.json"
+            Effect: "Allow"
     #memory:

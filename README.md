@@ -8,3 +8,5 @@ Requirements:
 * python2.7
 * jq
 * sed
+
+Alexa Skill Icon Image Credit: https://commons.wikimedia.org/wiki/File:Accessories-dictionary.svg
