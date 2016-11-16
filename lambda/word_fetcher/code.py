@@ -25,10 +25,11 @@ def wotd2json(wotd):
         if definition.note:
             text += ' ' + definition.note
         text += ' Source, ' + definition.source + '.'
-    text += ' Examples, '
-    for example in wotd.examples:
-        text += example.text
-        text += " from " + example.title + '. '
+    if wotd.examples:
+        text += ' Here are {} examples, '.format(len(wotd.examples))
+        for num, example in enumerate(wotd.examples):
+            text += "Example number {}: ".format(num+1) + example.text
+            text += " from " + example.title + '. '
     if wotd.note:
         text += ' Note, ' + wotd.note
     result['mainText'] = text
