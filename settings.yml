@@ -10,7 +10,7 @@ contexts:
     wordnik_api_key: ref://WordnikApiKey
 events:
   every_morning:
-    schedule_expression: cron(2,3,4 5 * * ? *) # Wordnik last changed at 3am UTC
+    schedule_expression: cron(* 5 * * ? *) 
     state: ENABLED
     description: Call lambda every morning.
     targets:
