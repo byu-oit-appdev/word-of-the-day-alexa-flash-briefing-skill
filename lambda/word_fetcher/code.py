@@ -17,7 +17,7 @@ def wotd2json(wotd):
     result = {}
     result['uid'] = str(uuid.uuid4())
     result['updateDate'] = datetime.datetime.utcnow().strftime('%Y-%m-%dT%H:%M:%S.0Z')
-    result['titleText'] = 'Word of the day, powered by Wordnik'
+    result['titleText'] = 'Word of the day: {}'.format(wotd.word)
     result['redirectionUrl'] = 'https://www.wordnik.com/word-of-the-day'
     text = wotd.word + ':'
     for definition in wotd.definitions:
@@ -34,6 +34,10 @@ def wotd2json(wotd):
         text += ' Note, ' + wotd.note
     result['mainText'] = text
     return json.dumps(result)
+
+def wotd2html(wotd):
+    "converts a wotd object to an HTML file for the home card"
+    pass #TODO finish wotd2html
 
 def save_wotd_json_to_s3(wotd_json):
     s3 = boto3.client('s3')
