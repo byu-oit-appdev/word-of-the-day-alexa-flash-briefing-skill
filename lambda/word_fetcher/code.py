@@ -27,7 +27,7 @@ def wotd2json(wotd):
         text += ' Source, ' + definition.source + '.'
     if wotd.examples:
         examples = wotd.examples[:3]
-        text += ' Here are {} examples, '.format(len(examples))
+        text += ' Here are {} examples of {}, '.format(len(examples), wotd.word)
         for num, example in enumerate(examples):
             text += "Example number {}: ".format(num+1) + example.text
             text += " from " + example.title + '. '
