@@ -15,3 +15,4 @@ lambdas:
             Resource: "arn:aws:s3:::alexa-word-of-the-day-763881559496/flashbriefing.json"
             Effect: "Allow"
     #memory:
+    timeout: 10
