@@ -19,7 +19,7 @@ def wotd2json(wotd):
     result['updateDate'] = datetime.datetime.utcnow().strftime('%Y-%m-%dT%H:%M:%S.0Z')
     result['titleText'] = '{}: {}'.format(wotd.word, wotd.definitions[0].text)
     result['redirectionUrl'] = 'https://www.wordnik.com/word-of-the-day'
-    text = wotd.word + '. '
+    text = wotd.word + '. ' + '. '.join(wotd.word) + '. ' + wotd.word + '. '
     for definition in wotd.definitions:
         text += ' ' + definition.partOfSpeech + '. ' + definition.text
         if definition.note:
