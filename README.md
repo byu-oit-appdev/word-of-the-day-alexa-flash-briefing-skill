@@ -1,4 +1,4 @@
-# Word of the Day Alexa Flash Briefing Skill
+# Word of the Day
 An Alexa Flash Briefing skill to learn you a new, interesting word everyday. Powered by the Wordnik API.
 
 # Design
