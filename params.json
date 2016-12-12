@@ -1,0 +1,6 @@
+{
+  "name": "Word of the Day",
+  "tagline": "An Alexa Flash Briefing skill to learn you a new, interesting word everyday.  Powered by the Wordnik API.",
+  "body": "# One-time Setup\r\nFirst say, \"Alexa, enable Word of the Day\".  \r\n\r\nThen, go to alexa.amazon.com in a web browser or open the Amazon Alexa app on Android or iOS and go to Settings > Flash Briefing. Look for Word of the Day and click the toggle on the right to add it to your Flash Briefing.  You may want to turn off other Flash Briefing skills here to decrease the length of your Flash Briefing.\r\n\r\n# Usage\r\nThen, anytime you want to learn a new word say, \"Alexa, what is my flash briefing?\"\r\n",
+  "note": "Don't delete this file! It's used internally to help with page regeneration."
+}
