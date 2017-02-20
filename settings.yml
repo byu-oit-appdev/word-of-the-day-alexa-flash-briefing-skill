@@ -10,7 +10,7 @@ contexts:
     wordnik_api_key: ref://WordnikApiKey
 events:
   every_morning:
-    schedule_expression: cron(* 5 * * ? *)
+    schedule_expression: cron(5 * * * ? *)
     state: ENABLED
     description: Call lambda every morning.
     targets:
