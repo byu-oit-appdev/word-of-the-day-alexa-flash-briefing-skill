@@ -1,5 +1,5 @@
 ---
-$schemaver: 2.0
+$schemaver: '2.0'
 repo_url: https://github.com/byu-oit/word-of-the-day-alexa-flash-briefing-skill
 software:
   - name: word-of-the-day-alexa-flash-briefing-skill
