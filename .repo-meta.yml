@@ -1,24 +1,23 @@
----
-$schemaver: '2.0'
+$schemaver: 2.1
 repo_url: https://github.com/byu-oit/word-of-the-day-alexa-flash-briefing-skill
 software:
   - name: word-of-the-day-alexa-flash-briefing-skill
     type: Mobile App
     aliases:
     short_description: An Alexa Flash Briefing skill to learn you a new, interesting
-        word everyday. Powered by the Wordnik API.
+      word everyday. Powered by the Wordnik API.
     assignment_group: gro:AD-Student Life Applications
     notes:
     maintained_by:
       - pauldeden
     developed_by_byu: true
     ddd:
-        business_domain:
-        ubiquitous_language_url:
-        context_map_url:
+      business_domain:
+      ubiquitous_language_url:
+      context_map_url:
     links:
-        system_documentation_url: https://github.com/byu-oit/word-of-the-day-alexa-flash-briefing-skill
-        swagger_urls:
+      system_documentation_url: https://github.com/byu-oit/word-of-the-day-alexa-flash-briefing-skill
+      swagger_urls:
     microservice: true
     technologies_used:
       - Python
@@ -26,28 +25,25 @@ software:
       - HTML
       - AWS Lambda
     stages:
-        production:
-            urls:
-                product_page: https://github.com/byu-oit/word-of-the-day-alexa-flash-briefing-skill
-                physical_url:
-                virtual_url:
-            hosting_location: AWS
-            aws_account: dev-oit-byu
-            relationships:
-                depends_on:
-                    db_read_write:
-                    db_read_only:
-                    software:
-                supports:
-                    software:
-                    service:
-                reverse_proxy:
-                runs_on:
-                    server_cluster:
-                    virtual_server:
-                    rack_server:
-                    blade_server:
-    tags:
-        data-sensitivity: confidential
-        app: word-of-the-day-alexa-flash-briefing-skill
-        team: gro:AD-Student Life Applications
+      production:
+        urls:
+          product_page: https://github.com/byu-oit/word-of-the-day-alexa-flash-briefing-skill
+          physical_url:
+          virtual_url:
+        hosting_location: AWS
+        aws_account: dev-oit-byu
+        relationships:
+          depends_on:
+            db_read_write:
+            db_read_only:
+            software:
+          supports:
+            software:
+            service:
+          reverse_proxy:
+          runs_on:
+            server_cluster:
+            virtual_server:
+            rack_server:
+            blade_server:
+    data_sensitivity: confidential
